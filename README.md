@@ -16,9 +16,13 @@ The suspend driver provides low power mode control for Cortex-A7 and Cortex-M4 d
 # Test
 
 Select a wakeup source. The following is an example to select the serial port 0 as the only wakeup source. Of course, you can select multiple sources one time.
+
     echo enabled > /sys/class/tty/ttymxc0/power/wakeup
+
 Let the system go into suspend state:
+
     echo mem > /sys/power/state
+
 The system should be in suspend state now. You can verify this by monitoring the power supply. To wakeup the system, just click any key in the serial console.
 
     

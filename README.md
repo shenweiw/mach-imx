@@ -1,1 +1,3 @@
 # mach-imx
+
+This repo is used to record the development of GPCv2 driver for Linux-next. Recently the upstreaming linux does not seem to accept the platform dependent codes for power management like suspend and standby. They perfer to implement this kind of feature via the new PSCI framework. Under PSCI framework, the platform dependent codes will be moved into the platform firmare which is running under Hypervisor or Secure priviledge. The support for this firmware is not readby on I.MX6/7 platforms. This repo will track the changes on linux-next and make the power management codes always align and consistent with the upsteaming kernel.
